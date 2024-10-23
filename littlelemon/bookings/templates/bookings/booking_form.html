@@ -1,0 +1,9 @@
+<!-- bookings/templates/bookings/booking_form.html -->
+
+<h1>Book a Reservation</h1>
+
+<form method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Submit</button>
+</form>
